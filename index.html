@@ -29,7 +29,7 @@
     <main class="desaparecido">
       <!-- opa, <section> já é um elemento semântico. Dica: podemos
            dividir a página em 3 seções, e esta é uma delas -->
-      <section id="tags">
+      <section id="tags" class="sticky">
         <h1>Nuvem de <em>tags</em></h1>
         <span class="tag-3">UFO</span>
         <span class="tag-1">OVNI</span>
@@ -96,6 +96,10 @@
           </h2>
         </article>
       </section>
+      <a href="#topo-da-pagina"> <img id="voltar-topo" src="imgs/arrowUp.png"/></a>
+      <img class="boo" id="boo1" src="imgs/boo1.gif"/>
+      <img class="boo" id="boo2" src="imgs/boo2.gif"/>
+      <img class="boo" id="boo3" src="imgs/boo3.gif"/>
 
     </main>
 
@@ -121,7 +125,7 @@
 
     <script>
       // faz o vídeo desaparecer de leve assim que terminar
-      let tempo = 11000;  // 11s, duração do vídeo
+      let tempo = 1;  // 11s, duração do vídeo
       setTimeout(() => {
         // faz o vídeo desaparecer colocando a classe .desaparecido
         document.querySelector('.backdrop').classList.add('desaparecido');
